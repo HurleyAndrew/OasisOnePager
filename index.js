@@ -2,12 +2,12 @@
 var lastScrollTop = 0;
 
 let rotation = 0;
-let rotMax = 20;
+let rotMax = 10;
 function myFunction(dir) {
   if (dir == "up") {
-    rotation += 0.5;
+    rotation += 0.25;
   } else if (dir == "down") {
-    rotation -= 0.5;
+    rotation -= 0.25;
   }
 
   let phone = document.getElementById("phone");

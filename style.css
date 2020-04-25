@@ -138,7 +138,7 @@
 /* Crumb Styling */
 .navCrumb {
   position: fixed;
-  bottom: 100px;
+  bottom: 80px;
   left: 30px;
   transform: rotate(-90deg);
   display: flex;
@@ -146,6 +146,7 @@
   color: white;
   font-family: sans-serif;
   transition: 245ms ease-in-out;
+  width: 190px;
 }
 .crumbLine {
   width: 100px;
@@ -154,16 +155,17 @@
   position: relative;
 }
 .blueCrumb {
-  color: var(--dark-blue);
+  color: var(--medium-blue);
 }
 .crumbLine {
-  transition: all 245ms ease-in-out;
+  transition: all 445ms ease-in-out;
 }
 .blueCrumbLine {
-  background-color: var(--dark-blue);
+  background-color: var(--medium-blue);
 }
 #crumbText {
-  transition: all 245ms ease-in-out;
+  transition: all 445ms ease-in-out;
+  margin-left: 20px;
 }
 .tag {
   width: 50px;
