@@ -9,13 +9,17 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="neu.css">
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
 </head>
 
 <body>
+    <div class="navCrumb" id="crumb">
+        <p id="crumbText">Intro</p>
+        <div class="crumbLine"></div>
+    </div>
     <div class="wrapper">
         <!-- Hero Container Top of Page -->
         <div class="heroBG">
+            <div id="Intro" class="tag"></div>
             <div class="heroContainer maxSectionWidth">
                 <div class="heroTitle weight-medium font-dmsans">Welcome to Oasis, a digital meditation experience.
                 </div>
@@ -34,21 +38,63 @@
         </div>
         <!-- Summary Container -->
         <div class="summaryBG">
+            <div id="Summary" class="tag"></div>
             <div class="summaryContainer maxSectionWidth">
                 <div class="summaryTextContainer">
                     <div class="font-dmsans weight-medium 
             summaryTitle">Just Breathe.</div>
-                    <div class="paragraph weight-regular font-barlow summaryPara">While our original intention for Oasis
-                        was
-                        to create
-                        an
-                        exhibit at Imagine RIT, we have since had to
-                        pivot to make it entirely digital.
-                        Now you can experience the Oasis on your own device, and just breathe to melt away stress.</div>
+                    <div class="summaryParaContainer">
+                        <div class="paragraph weight-regular font-barlow summaryPara">While our original intention for
+                            Oasis
+                            was to create an exhibit at Imagine RIT, we have since had to pivot to make it entirely
+                            digital.
+                        </div>
+                        <div class="paragraph weight-regular font-barlow summaryPara">
+                            Now you can experience the Oasis on your own device, and just breathe to melt away stress.
+                        </div>
+                    </div>
                 </div>
+                <div class="summaryIpadPhoto" id="tablet"></div>
+                <div class="summaryIphonePhoto" id="phone"></div>
+
+            </div>
+            <div class="featuresContainer maxSectionWidth">
+                <div id="Features" class="tag"></div>
+                <div>
+                    <div class="featureItem font-dmsans weight-regular">
+                        <p class="font-barlow weight-regular">01</p> <span></span> Personalized relaxation
+                    </div>
+                    <div class="featureItem font-dmsans weight-regular">
+                        <p class="font-barlow weight-regular">02</p> <span></span> Generative art based on quiz answers
+                    </div>
+                    <div class="featureItem font-dmsans weight-regular">
+                        <p class="font-barlow weight-regular">03</p> <span></span> Easy to follow, guided meditation
+                    </div>
+
+                    <div class="tryNowButtonContainer">
+                        <div class="tryNowButton"></div>
+                        <div class="tryNowCircle">
+                            <div class="tryNowText font-barlow weight-regular">Try It</div>
+                            <img class="tryArrow" src="media/tryNowArrow.svg"></img>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <div class="processButtonContainer">
+                <div id="Problem" class="tag"></div>
+                <img class="processButton" src="media/processButton.png"></img>
             </div>
         </div>
+        <!-- Problem Section -->
+        <div class="problemBG">
+
+        </div>
     </div>
+    <script src="index.js"></script>
 </body>
 
 </html>

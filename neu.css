@@ -71,8 +71,50 @@
 /* "BEGIN" BUTTON TEXT */
 .beginText {
   color: white;
-  /* font-family: "Barlow", sans-serif; */
-  font-size: 40px;
+  font-size: 36px;
+  margin-top: 20px;
+  margin-bottom: -15px;
+}
 
-  margin-top: 10%;
+/* Try It  */
+.tryNowButtonContainer {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  opacity: 1;
+  animation: fadeIn 1s ease-in-out;
+  margin-left: -80px;
+  margin-top: 50px;
+}
+
+.tryNowButton {
+  height: 90px;
+  width: 236px;
+  background: #e8edf4;
+  box-shadow: 17.28px 9.28px 55.67px rgba(47, 67, 125, 0.2),
+    -26.28px -18.28px 55.67px #ffffff,
+    inset 4.77778px 4.77778px 11.9444px rgba(255, 255, 255, 0.1),
+    inset -19.1111px -19.1111px 95.5556px rgba(255, 255, 255, 0.2);
+  filter: blur(1.25px);
+  border-radius: 80px;
+}
+
+.tryNowCircle {
+  height: 59px;
+  width: 194px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border: 2px solid var(--dark-blue);
+  border-radius: 50px;
+}
+
+.tryNowText {
+  color: var(--dark-blue);
+  font-size: 24px;
+  margin-right: 18px;
 }

@@ -11,7 +11,7 @@
 }
 .maxSectionWidth {
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 1200px;
 }
 /* Hero Container */
 .heroBG {
@@ -25,33 +25,149 @@
   justify-content: space-between;
 }
 .heroTitle {
-  font-size: 100px;
-  line-height: 83px;
   letter-spacing: -3px;
-  color: #e7eeff;
-  width: 70%;
+  color: var(--white);
+  width: 780px;
   margin-bottom: 100px;
-  /* margin-left: 100px; */
-  font-size: 95px;
-  line-height: 78px;
+  font-size: 110px;
+  line-height: 87px;
 }
 /* Summary Container */
 .summaryBG {
+  background-color: var(--light-gray);
 }
 .summaryContainer {
 }
 .paragraph {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 40px;
   color: var(--dark-blue);
 }
 .summaryTitle {
-  font-size: 105px;
-  width: 800px;
+  font-size: 140px;
+  width: 1100px;
+  color: var(--dark-blue);
+  padding-top: 200px;
+}
+.summaryParaContainer {
+  margin-top: 70px;
 }
 .summaryPara {
-  width: 440px;
+  margin-top: 20px;
+  width: 600px;
 }
 .summaryTextContainer {
   /* margin-left: 100px; */
+}
+.summaryIpadPhoto {
+  position: absolute;
+  right: -160px;
+  transform: rotate(-6deg);
+  /* border-radius: 40px; */
+
+  margin-top: -200px;
+  width: 966px;
+  height: 742px;
+  /* background: black; */
+  background-image: url("media/ipadPhoto.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.summaryIphonePhoto {
+  /* position: absolute; */
+  /* right: -40px; */
+  transform: rotate(8deg);
+  /* border-radius: 40px; */
+  margin-top: 70px;
+  margin-left: 100px;
+  width: 400px;
+  height: 668px;
+  background-image: url("media/iphonePhoto.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Features Section */
+.featuresContainer {
+  /* background-color: black; */
+  margin-top: -200px;
+  /* height: 600px; */
+  display: flex;
+  justify-content: flex-end;
+}
+.featureItem {
+  color: var(--dark-blue);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 26px;
+  margin-top: 30px;
+}
+.featureItem p {
+  font-size: 22px;
+  width: 30px;
+}
+.featureItem span {
+  width: 100px;
+  height: 1px;
+  background-color: var(--medium-blue);
+  margin-left: 10px;
+  margin-right: 20px;
+}
+.tryArrow {
+  width: 40px;
+}
+/* Problem Section */
+.problemBG {
+  height: 1000px;
+  background-color: var(--medium-blue);
+}
+
+/* Process Section */
+.processButtonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.processButton {
+  margin-bottom: -76px;
+  width: 380px;
+  object-fit: contain;
+}
+
+/* Crumb Styling */
+.navCrumb {
+  position: fixed;
+  bottom: 100px;
+  left: 30px;
+  transform: rotate(-90deg);
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: sans-serif;
+  transition: 245ms ease-in-out;
+}
+.crumbLine {
+  width: 100px;
+  height: 2px;
+  background-color: white;
+  position: relative;
+}
+.blueCrumb {
+  color: var(--dark-blue);
+}
+.crumbLine {
+  transition: all 245ms ease-in-out;
+}
+.blueCrumbLine {
+  background-color: var(--dark-blue);
+}
+#crumbText {
+  transition: all 245ms ease-in-out;
+}
+.tag {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  position: relative;
 }
