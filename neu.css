@@ -118,3 +118,10 @@
   font-size: 24px;
   margin-right: 18px;
 }
+
+.blueTryItShadow {
+  box-shadow: 26.2778px 26.2778px 55.67px rgba(13, 34, 95, 0.5),
+    -26.2778px -26.2778px 55.67px rgba(101, 134, 226, 0.8),
+    inset 4.77778px 4.77778px 11.9444px #536ebb,
+    inset -19.1111px -19.1111px 95.5556px rgba(36, 58, 120, 0.2);
+}
