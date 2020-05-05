@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="styles/timer.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.6/lottie.min.js"></script>
+  <link rel="icon" href="media/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="media/favicon-64.png" type="image/png" sizes="64x64">
+  <title>Oasis</title>
+</head>
+
+
+<body id="container">
+  <script>
+    var animation = bodymovin.loadAnimation({
+      container: document.getElementById('timerCircle'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'scripts/timerdata.json'
+    })
+  </script>
+  <div class="timerBG">
+    <!-- timer Button -->
+    <div>
+      <div class="timerbackPlate">
+
+        <div class="timerButtonContainer">
+          <div class="timerButton"></div>
+          <div id="timerCircle" class="timerCircle">
+
+            <!-- <div id="instructions" class="textParagraph timerText">Inhale</div> -->
+
+            <!-- <div class="timerDotsContainer">
+              <div id="dot1" class="dot"></div>
+              <div id="dot2" class="dot"></div>
+              <div id="dot3" class="dot"></div>
+            </div> -->
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+</body>
+<script src="scripts/radialIndicator.min.js"></script>
+<script src="scripts/timer.js"></script>
+
+
+
+</html>

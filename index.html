@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="neu.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" href="media/favicon-32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="media/favicon-64.png" type="image/png" sizes="64x64">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.min.js"></script>
+
+
 </head>
 
 <body>
@@ -17,15 +23,17 @@
         <p id="crumbText">Intro</p>
 
     </div>
-    <div class="wrapper">
+    <div class="wrapper" id="top">
         <!-- Hero Container Top of Page -->
         <div class="heroBG">
+            <div class="heroImage"></div>
             <div id="Intro" class="tag"></div>
             <div class="heroContainer maxSectionWidth">
-                <div class="heroTitle weight-medium font-dmsans">Welcome to Oasis, a digital meditation experience.
-                </div>
+
+                <div class="heroTitle weight-medium font-dmsans" id="introTitle">
+                    Welcome/to/Oasis,/a/digitalmeditation/////experience.</div>
                 <!-- Begin Button -->
-                <div class="beginButtonContainer">
+                <a href="OasisApp/index.html" target="_blank" class="beginButtonContainer">
                     <div class="beginButton"></div>
                     <div class="beginCircle">
                         <div class="beginArrowContainer">
@@ -34,16 +42,17 @@
                         </div>
                         <div class="beginText font-barlow weight-regular">Try It</div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
         <!-- Summary Container -->
         <div class="summaryBG">
-            <div id="Summary" class="tag"></div>
+
             <div class="summaryContainer maxSectionWidth">
                 <div class="summaryTextContainer">
-                    <div class="font-dmsans weight-medium 
-            summaryTitle">Just Breathe.</div>
+                    <div class="font-dmsans weight-medium
+            summaryTitle" id="summaryTitle">Just/Breathe.</div>
+                    <div id="Summary" class="tag"></div>
                     <div class="summaryParaContainer">
                         <div class="paragraph weight-regular font-barlow summaryPara">While our original intention for
                             Oasis
@@ -74,28 +83,557 @@
 
                     <div class="tryNowButtonContainer">
                         <div class="tryNowButton"></div>
-                        <div class="tryNowCircle">
+                        <a href="./OasisApp/index.html" class="tryNowCircle">
                             <div class="tryNowText font-barlow weight-regular">Try It</div>
                             <img class="tryArrow" src="media/tryNowArrow.svg"></img>
-                        </div>
+                        </a>
                     </div>
-
 
                 </div>
 
 
             </div>
             <div class="processButtonContainer">
-                <div id="Problem" class="tag"></div>
+
                 <img class="processButton" src="media/processButton.png"></img>
             </div>
         </div>
         <!-- Problem Section -->
         <div class="problemBG">
+            <div class="problemTitleContainer maxSectionWidth">
+                <div class="problemTitle weight-medium font-dmsans" id="problemTitle">Stress/is/constant.</div>
+                <div id="Problem" class="tag"></div>
+                <img class="problemIllustration" src="media/blockMan.png"
+                    alt="Illustration of a person holding up a heavy stone" />
+            </div>
+            <div class="statisticsContainer maxSectionWidth">
+                <div class="featureItem font-dmsans weight-regular">
+                    <p class="font-barlow weight-regular">01</p> <span></span> Statistics
+                </div>
+                <div class="statsRow">
+                    <div class="stat">
+                        <img src="media/stat1.png" class="statImage"></img>
+                        <p class="paragraph font-barlow">of people regularly experience physical symptoms caused by
+                            stress.</p>
+                        <span class="paragraph font-barlow weight-bold">- American Insitute of Stress</span>
+                    </div>
+                    <div class="stat">
+                        <img src="media/stat2.png" class="statImage"></img>
+                        <p class="paragraph font-barlow">of people are stressed or feel stressed in their work
+                            environment.</p>
+                        <span class="paragraph font-barlow weight-bold">- Psychology Today</span>
+                    </div>
+                    <div class="stat">
+                        <img src="media/stat3.png" class="statImage"></img>
+                        <p class="paragraph font-barlow">of adults said they had experienced stress during “a lot of the
+                            day”.</p>
+                        <span class="paragraph font-barlow weight-bold">- NY Times</span>
+                    </div>
+                </div>
+            </div>
+            <div class="takesATollContainer maxSectionWidth">
+                <div id="TakesAToll" class="tag"></div>
+                <div class="tollLine"></div>
+                <span class="weight-medium font-dmsans tollTitle" id="takesatollTitle">%/it/ takes/a/toll.
+                </span>
+            </div>
+
+            <div class="effectsContainer maxSectionWidth">
+                <!-- not sure where to put this tag to make it work -->
+                <!-- <div class="featureItem font-dmsans weight-regular">
+                    <p class="font-barlow weight-regular">02</p> <span></span> Effects
+                </div> -->
+
+                <img src="media/treeIllustration.png" class="effectsIllustration"></img>
+
+                <div class="effectsListContainer">
+                    <div class="featureItem font-dmsans weight-regular">
+                        <p class="font-barlow weight-regular">02</p> <span></span> Effects
+                    </div>
+                    <div>
+                        <div class="effect">
+                            <span class="paragraph font-barlow weight-bold">Headaches</span>
+                            <p class="paragraph font-barlow">Stress can trigger and intensify tension headaches.</p>
+                        </div>
+                        <div class="effect">
+                            <span class="paragraph font-barlow weight-bold">Insomnia</span>
+                            <p class="paragraph font-barlow">Stress makes it harder to fall asleep and stay asleep.</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="effect">
+                            <span class="paragraph font-barlow weight-bold">Fast heart rate</span>
+                            <p class="paragraph font-barlow">Under stress, the heart works harder to pump blood. Long
+                                term, this can lead to heart disease.</p>
+                        </div>
+                        <div class="effect">
+                            <span class="paragraph font-barlow weight-bold">Rapid breathing</span>
+                            <p class="paragraph font-barlow">Tense breathing muscles under stress can leave you short of
+                                breath.</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="effect">
+                            <span class="paragraph font-barlow weight-bold">Weak immune system</span>
+                            <p class="paragraph font-barlow">Weakened defenses from chronic stress makes it more
+                                difficult to fight infections.</p>
+                        </div>
+                        <div class="effect">
+                            <span class="paragraph font-barlow weight-bold">High blood pressure</span>
+                            <p class="paragraph font-barlow">Stress causes blood vessels to tighten and raise blood
+                                pressure.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
 
         </div>
+        <!-- solutions section -->
+        <div class="solutionsBG">
+
+            <div class="solutionContainer maxSectionWidth">
+                <div>
+                    <div id="Solution" class="tag"></div>
+                    <div class="font-dmsans weight-medium
+            summaryTitle solutionTitle" id="solutionTitle">Meditation/can/help.</div>
+                </div>
+                <div class="meditationInfo colorWhite">
+
+                    <div class="font-barlow weight-regular paragraph solutionPara colorWhite">Our application
+                        employs the
+                        4-7-8
+                        breathing technique in a relaxing
+                        experience that can be used anywhere, anytime.
+                        <br>
+                        <br>
+                        When you’re feeling stressed, a few moments just focusing on your breathing can make all the
+                        difference.
+                    </div>
+
+                    <div class="solutionList">
+
+                        <div class="featureItem font-dmsans weight-regular colorWhite">
+                            <p class="font-barlow weight-regular colorWhite">01</p> <span class="bgWhite"></span>
+                            Reduces anxiety
+                        </div>
+
+                        <div class="featureItem font-dmsans weight-regular colorWhite">
+                            <p class="font-barlow weight-regular colorWhite">02</p> <span class="bgWhite"></span>
+                            Slows heart rate
+                        </div>
+
+                        <div class="featureItem font-dmsans weight-regular colorWhite">
+                            <p class="font-barlow weight-regular colorWhite">03</p> <span class="bgWhite"></span>
+                            Helps you to sleep
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tryNowButtonContainer meditationTryItNow">
+                    <div class="tryNowButton bgMediumBlue blueTryItShadow"></div>
+                    <a href="./OasisApp/index.html" class="tryNowCircle strokeWhite">
+                        <div class="tryNowText font-barlow weight-regular colorWhite ">Try It</div>
+                        <img class="tryArrow" src="media/tryNowArrowWhite.svg"> </img>
+                    </a>
+                </div>
+
+                <div class="meditationIpadImageContainer">
+                    <div class="meditationIpadImage"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Breathing Belt Section -->
+        <div class="beltsBG">
+
+            <div class="beltContainer maxSectionWidth">
+                <div id="Hardware" class="tag"></div>
+                <div class="beltInformation">
+                    <div class="font-dmsans weight-medium colorWhite beltTitle" id="hardwareTitle">
+                        The///////////BreathingBelt</div>
+                    <div class="paragraph font-barlow beltPara weight-regular colorWhite">Our Imagine RIT exhibit
+                        intended to use a
+                        respiration
+                        belt made
+                        by our
+                        team using Adafruit FLORA and a force sensitive resistor. It plugs into the computer and
+                        senses your breathing to affect an on-screen visual.
+                    </div>
+                </div>
+
+                <div class="beltImage"></div>
+                <div class="demoSection">
+                    <div id="Demo" class="tag"></div>
+                    <div class="featureItem font-dmsans weight-regular colorWhite">
+                        <p class="font-barlow weight-regular colorWhite">01</p> <span class="bgWhite"></span>
+                        Demo
+                    </div>
+                    <div class="demoVideo">
+
+                        <video controls id="demoVideo" src="media/demoVideo.mp4" mute poster="media/demoPoster.jpg"
+                            width="620" class="video">
+                        </video>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Technology section -->
+        <div class="technologyBG">
+            <div class="technologyContainer maxSectionWidth">
+                <div id="Technology" class="tag"></div>
+                <div class="font-dmsans weight-medium colorWhite technologyTitle" id="technologyTitle">
+                    Skills/%/Technology
+                </div>
+            </div>
+            <div class="p5Container">
+                <div class="leftp5"></div>
+                <div class="p5InfoContainer">
+                    <div class="featureItem font-dmsans weight-regular colorWhite">
+                        <p class="font-barlow weight-regular colorWhite">01</p> <span class="bgWhite"></span>
+                        p5.js
+                    </div>
+
+                    <div class="paragraph font-barlow beltPara weight-regular colorWhite">We used the p5.js library
+                        to
+                        create and display our custom visuals to the user. Its wide range of capabilities allowed us
+                        to
+                        make fast, efficient graphics.
+                        <br>
+                        <br>
+                        p5.js Serial helped connect the respiration belt, so your breathing could affect the visual.
+                    </div>
+                </div>
+                <div class="rightp5"></div>
+            </div>
+
+
+            <div class="p5Container electronicsContainer">
+                <div class="electronicsImage"></div>
+                <div class="p5InfoContainer">
+                    <div class="featureItem font-dmsans weight-regular colorWhite">
+                        <p class="font-barlow weight-regular colorWhite">02</p> <span class="bgWhite"></span>
+                        Electronics
+                    </div>
+
+                    <div class="paragraph font-barlow beltPara weight-regular colorWhite">Basic electronics helped
+                        us to create an electrical circuit that worked with our pressure sensors using resistors and
+                        an arduino.
+                        <br>
+                        <br>
+                        With an Adafruit Flora board, we sent data to and from the device’s sensors and the
+                        computer.
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="p5Container electronicsContainer fabricationContainer">
+
+                <div class="p5InfoContainer">
+                    <div class="featureItem font-dmsans weight-regular colorWhite">
+                        <p class="font-barlow weight-regular colorWhite">03</p> <span class="bgWhite"></span>
+                        Fabrication
+                    </div>
+
+                    <div class="paragraph font-barlow beltPara weight-regular colorWhite">Commercially available
+                        respiratory measurement devices were out of budget, so we made our own by sewing and
+                        soldering parts together.
+                    </div>
+                </div>
+
+                <div class="fabricationImage"></div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Coding Hurdles section -->
+        <div class="codingBG">
+            <div class="codingContainer maxSectionWidth">
+                <div id="Challenges" class="tag"></div>
+                <div class="font-dmsans weight-medium technologyTitle colorBlue" id="codingTitle">
+                    Coding/Hurdles
+                </div>
+
+                <div class="codingRow">
+                    <div class="codingHurdlesContainer">
+                        <div class="featureItem font-dmsans weight-regular colorBlue">
+                            <p class="font-barlow weight-regular colorBlue">01</p> <span class="bgBlue"></span>
+                            Device Calibration
+                        </div>
+
+                        <div class="paragraph font-barlow beltPara weight-regular colorBlue">Commercially available
+                            respiratory measurement devices were out of budget, so we made our own by sewing and
+                            soldering parts together.
+                        </div>
+                    </div>
+                    <div class="deviceCalibrationImage"></div>
+                </div>
+
+                <div class="codingRow callbackRow">
+                    <div class="timerCallbackImage"></div>
+                    <div class="codingHurdlesContainer">
+                        <div class="featureItem font-dmsans weight-regular colorBlue">
+                            <p class="font-barlow weight-regular colorBlue">02</p> <span class="bgBlue"></span>
+                            Timer Callbacks
+                        </div>
+
+                        <div class="paragraph font-barlow beltPara weight-regular colorBlue">Because our app works
+                            with and without the belt, when no belt is detected, we have to simulate inhaling,
+                            holding, and exhaling to match the on-screen timer.
+                            <br>
+                            <br>
+                            With a few callback methods, the app knows when to change states in tandem with the
+                            timer, so the visuals match up with the intended breath cycle.
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <!-- <div class="codingHurdlesBottom">
+                <div class="codingHurdlesBottomImage"></div>
+            </div> -->
+        </div>
+
+
+        <!-- solutions section -->
+        <div class="designsBG">
+
+            <div class="designContainer maxSectionWidth">
+                <div>
+                    <div id="Designs" class="tag"></div>
+                    <div class="font-dmsans weight-medium
+                summaryTitle  colorBlue" id="designTitle">Design/System.</div>
+                </div>
+
+
+                <div class="codingRow designIpadsRow">
+                    <div class="codingHurdlesContainer">
+                        <div class="featureItem font-dmsans weight-regular colorBlue">
+                            <p class="font-barlow weight-regular colorBlue">01</p> <span class="bgBlue"></span>
+                            Neumorphism
+                        </div>
+
+                        <div class="paragraph font-barlow beltPara weight-regular colorBlue">A few iterations landed the
+                            UI style at neumorphism. The subtle shading and smooth edges fit the calm atmosphere we
+                            wanted to create with the Oasis.
+                            <br>
+                            <br>
+                            The raised button style feels most similar to a tangible button, which we feel is important,
+                            as touch is a vital part of mindfulness and meditation.
+                        </div>
+                    </div>
+                    <div class="designIpads"></div>
+                </div>
+
+                <div class="wholeRowIllustrations">
+                    <div class="illustrationsImage"></div>
+                </div>
+
+                <div class="codingRow callbackRow lastIllustrationRow">
+                    <div class="birdPainting">
+                        <div class="birdPaintingInner"></div>
+                    </div>
+                    <div class="codingHurdlesContainer">
+                        <div class="featureItem font-dmsans weight-regular colorBlue">
+                            <p class="font-barlow weight-regular colorBlue">02</p> <span class="bgBlue"></span>
+                            Illustrations
+                        </div>
+
+                        <div class="paragraph font-barlow beltPara weight-regular colorBlue">To set the atmosphere, we
+                            created whimsical illustrations to visualize answers to the quiz questions and bring a sense
+                            of delight into the experience.
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="designContainer maxSectionWidth takeawayContainer">
+                <div class="takesATollContainer maxSectionWidth">
+                    <div id="Takeaway" class="tag"></div>
+                    <div class="tollLine"></div>
+                    <span class="weight-medium font-dmsans tollTitle" id="beforeyougoTitle">Before/you/go,
+                    </span>
+                </div>
+
+                <div class="codingRow designIpadsRow beforeYouGoContainer">
+                    <div class="codingHurdlesContainer">
+                        <div class="featureItem font-dmsans weight-regular colorBlue">
+                            <span class="bgBlue"></span>
+                            Take These
+                        </div>
+
+                        <div class="paragraph font-barlow beltPara weight-regular colorBlue">Extend the Oasis experience
+                            into your everyday life by practicing breathing meditation and mindfulness on your own.
+                            <br>
+                            <br>
+                            Print out these cards and take them with you as a reminder to breathe.
+
+                        </div>
+                        <div class="tryNowButtonContainer downloadBtn">
+                            <div class="tryNowButton pdfBtnButton"></div>
+                            <a href="media/PrintableCards.pdf" target="_blank" class="tryNowCircle pdfBtnCircle">
+                                <div class="tryNowText font-barlow weight-regular">Download</div>
+                                <img class="tryArrow" src="media/tryNowArrow.svg"></img>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="takeawayImage"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="teamBG">
+
+            <div class="designContainer maxSectionWidth">
+                <div>
+                    <div id="TheTeam" class="tag"></div>
+                    <!-- <div class="font-dmsans weight-medium
+                summaryTitle  colorBlue" id="designTitle">The Team</div> -->
+                </div>
+
+
+                <div class="teamContainer">
+                    <div class="featureItem font-dmsans weight-regular teamHeader ">
+                        <span></span> We are Oasis.
+                    </div>
+                    <div class="teamRow">
+                        <div class="teamMember">
+                            <img class="memberImage" loading="lazy" src="media/team/andrew.jpg"
+                                alt="Team Photo of Andrew">
+
+                            <span class="paragraph font-barlow weight-bold memberName">Andrew Hurley</span>
+                            <p class="paragraph font-barlow memberRoll">Team Lead</p>
+
+                        </div>
+
+                        <div class="teamMember">
+                            <img class="memberImage" src="media/team/sarah.jpg" alt="Team Photo of Andrew">
+
+                            <span class="paragraph font-barlow weight-bold memberName">Sarah Danseglio</span>
+                            <p class="paragraph font-barlow memberRoll">Visual Designer/Illustrator</p>
+
+                        </div>
+
+                        <div class="teamMember">
+                            <img class="memberImage" loading="lazy" src="media/team/jiayun.jpg"
+                                alt="Team Photo of Jiayun">
+
+                            <span class="paragraph font-barlow weight-bold memberName">Jiayun Li</span>
+                            <p class="paragraph font-barlow memberRoll">UX/Research Designer</p>
+
+                        </div>
+
+                        <div class="teamMember">
+                            <img class="memberImage" loading="lazy" src="media/team/emily.jpg"
+                                alt="Team Photo of Emilie">
+
+                            <span class="paragraph font-barlow weight-bold memberName">Emilie Ravena</span>
+                            <p class="paragraph font-barlow memberRoll">UX/Research Designer</p>
+
+                        </div>
+
+                    </div>
+                    <div class="teamRow">
+                        <div class="teamMember">
+                            <img class="memberImage" loading="lazy" src="media/team/jenna.jpg"
+                                alt="Team Photo of Jenna">
+
+                            <span class="paragraph font-barlow weight-bold memberName">Seung Hee Yun</span>
+                            <p class="paragraph font-barlow memberRoll">Interaction Designer</p>
+
+                        </div>
+
+                        <div class="teamMember">
+                            <img class="memberImage" loading="lazy" src="media/team/ilika.jpg"
+                                alt="Team Photo of Ilika">
+
+                            <span class="paragraph font-barlow weight-bold memberName">Ilika Cui</span>
+                            <p class="paragraph font-barlow memberRoll">Graphics Developer</p>
+
+                        </div>
+
+                        <div class="teamMember">
+                            <img class="memberImage" loading="lazy" src="media/team/alex.jpg" alt="Team Photo of Alex">
+
+                            <span class="paragraph font-barlow weight-bold memberName">Alex Pasieka</span>
+                            <p class="paragraph font-barlow memberRoll">Front End Developer</p>
+
+                        </div>
+
+                        <div class="teamMember">
+                            <img class="memberImage" loading="lazy" src="media/team/tyler.jpg"
+                                alt="Team Photo of Tyler">
+
+                            <span class="paragraph font-barlow weight-bold memberName">Tyler Ciarmataro</span>
+                            <p class="paragraph font-barlow memberRoll">Full Stack Developer</p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="footerIllustrationContainer">
+            <div class="footerIllustration"></div>
+        </div>
+        <div class="footerBG">
+
+            <div class="footerContainer maxSectionWidth">
+
+                <div class="footerInfo">
+                    <img src="media/footerLogo.svg" class="footerLogo"></img>
+
+                    <div class="footerInfoContainer">
+                        <div>
+                            <span class="paragraph font-barlow weight-bold colorWhite memberName footerText">Thank you
+                                for
+                                visiting.</span>
+                            <p class="paragraph font-barlow colorWhite memberRoll footerText">© 2020</p>
+
+                        </div>
+                    </div>
+
+                    <div class="footerInfoContainer">
+                        <div>
+                            <span class="paragraph font-barlow weight-bold colorWhite memberName footerText">Special
+                                Thanks</span>
+                            <p class="paragraph font-barlow colorWhite memberRoll footerText">Adam Smith</p>
+                            <p class="paragraph font-barlow colorWhite memberRoll footerText">Carlos Castellanos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#top"><img src="media/backtoTop.svg" class="backtoTop"></img></a>
+                </div>
+
+            </div>
+        </div>
+
     </div>
     <script src="index.js"></script>
+    <script src="sketch.js"></script>
 </body>
 
 </html>

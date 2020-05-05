@@ -1,0 +1,793 @@
+@media only screen and (max-width: 1515px) {
+  .summaryPara {
+    width: 360px;
+  }
+}
+@media only screen and (max-width: 1375px) {
+  .maxSectionWidth {
+    width: 1100px;
+  }
+  .summaryPara {
+    width: 350px;
+  }
+  .problemTitle {
+    font-size: 111px;
+    width: 469px;
+  }
+  .navCrumb {
+    left: -50px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .navCrumb {
+    left: -60px;
+  }
+  .maxSectionWidth {
+    width: 1000px;
+  }
+
+  .paragraph {
+    font-size: 16px;
+    line-height: 31px;
+  }
+  .effect {
+    width: 250px;
+  }
+  .solutionTitle {
+    font-size: 85px;
+  }
+  .meditationInfo {
+    margin-top: 30px;
+  }
+  .solutionPara {
+    width: 404px;
+  }
+  .beltTitle {
+    line-height: 90px;
+    width: 480px;
+  }
+  .beltPara {
+    margin-top: 40px;
+    width: 350px;
+  }
+  .designIpads {
+    height: 450px;
+    width: 450px;
+  }
+  .birdPaintingInner {
+    height: 364px;
+  }
+  .birdPainting {
+    width: 490px;
+    height: 280px;
+  }
+  .takeawayImage {
+    height: 490px;
+    width: 500px;
+    transform-origin: left;
+    margin-top: 0px;
+    transform: scale(1);
+  }
+  .memberImage {
+    width: 180px;
+    height: 150px;
+    margin-bottom: 9px;
+  }
+  .lastIllustrationRow {
+    padding-bottom: 90px;
+  }
+  .callbackRow {
+    margin-top: 30px;
+  }
+  .fabricationImage {
+    height: 470px;
+  }
+  .tollLine {
+    width: 160px;
+  }
+  .demoVideo {
+    height: 580px;
+  }
+  .technologyTitle {
+    font-size: 90px;
+  }
+  .fabricationImage {
+    height: 474px;
+  }
+  .summaryIpadPhoto {
+    margin-top: -290px;
+    width: 776px;
+    height: 792px;
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .maxSectionWidth {
+    width: 800px;
+  }
+  .effectsIllustration {
+    height: 410px;
+  }
+  .effect {
+    margin-bottom: 5px;
+    margin-top: 15px;
+    width: 230px;
+  }
+  .tollTitle {
+    font-size: 80px;
+    line-height: 6px;
+    width: 530px;
+  }
+  .paragraph {
+    line-height: 28px;
+  }
+  .featureItem {
+    font-size: 22px;
+  }
+  .featureItem span {
+    width: 60px;
+  }
+  .featureItem p {
+    font-size: 20px;
+  }
+  .meditationIpadImage {
+    height: 490px;
+  }
+  .beltImage {
+    height: 400px;
+  }
+  .demoVideo {
+    height: 470px;
+  }
+  .summaryTitle {
+    font-size: 117px;
+    width: 880px;
+    padding-top: 120px;
+  }
+  .timerCallbackImage {
+    height: 383px;
+    width: 409px;
+    margin-right: 0px;
+    margin-bottom: 100px;
+  }
+  .deviceCalibrationImage {
+    height: 205px;
+    width: 419px;
+    margin-bottom: 60px;
+  }
+  .illustrationsImage {
+    height: 390px;
+    margin-top: 60px;
+  }
+  .birdPainting {
+    width: 370px;
+    height: 216px;
+  }
+  .birdPaintingInner {
+    height: 280px;
+  }
+  .beltPara {
+    margin-top: 20px;
+    width: 300px;
+  }
+
+  .memberImage {
+    width: 160px;
+    height: 130px;
+  }
+  .paragraph {
+    line-height: 24px;
+  }
+  .summaryTitle {
+    font-size: 87px;
+  }
+  #Designs {
+    transform: translateY(20px);
+  }
+  .heroTitle {
+    letter-spacing: -2px;
+    margin-bottom: 210px;
+    font-size: 72px;
+    line-height: 61px;
+    width: 411px;
+  }
+
+  .summaryIpadPhoto {
+    margin-top: -200px;
+    width: 506px;
+    height: 552px;
+  }
+  .summaryIphonePhoto {
+    margin-top: 70px;
+    margin-left: 100px;
+    width: 390px;
+    height: 608px;
+  }
+  .problemTitle {
+    font-size: 94px;
+    line-height: 86px;
+    /* margin-bottom: -70px; */
+  }
+  .stat {
+    width: 210px;
+  }
+  .statImage {
+    width: 190px;
+    height: 190px;
+  }
+  .stat p {
+    width: 254px;
+  }
+  .statImage {
+    align-self: auto;
+  }
+  /* NEU */
+  .tryNowText {
+    color: var(--dark-blue);
+    font-size: 20px;
+    margin-right: 18px;
+  }
+  .tryArrow {
+    width: 29px;
+    margin-top: 2px;
+  }
+  .tryNowCircle {
+    height: 49px;
+  }
+  .pdfBtnCircle {
+    width: 184px;
+  }
+  .pdfBtnButton {
+    height: 75px;
+    width: 217px;
+  }
+  /*  */
+  .beginButton {
+    width: 220px;
+    height: 220px;
+  }
+  .beginCircle {
+    width: 190px;
+    height: 190px;
+  }
+  .beginArrowLine {
+    width: 45px;
+  }
+  .beginArrowPoint {
+    width: 22px;
+    height: 22px;
+    margin-left: -28px;
+  }
+
+  .beginText {
+    color: white;
+    font-size: 26px;
+    margin-top: 30px;
+    margin-bottom: -15px;
+  }
+
+  .beginButtonContainer {
+    margin-bottom: 190px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .maxSectionWidth {
+    width: 600px;
+  }
+  .summaryParaContainer {
+    margin-top: 30px;
+  }
+  .heroContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .heroTitle {
+    margin-bottom: 40px;
+    margin-top: 110px;
+  }
+  .beginButtonContainer {
+    margin-bottom: 80px;
+  }
+  .summaryIphonePhoto {
+    margin-top: 270px;
+    width: 430px;
+  }
+  .summaryIpadPhoto {
+    margin-top: -50px;
+  }
+  .featuresContainer {
+    margin-top: -100px;
+  }
+  .featureItem {
+    font-size: 20px;
+  }
+  .featuresContainer {
+    justify-content: center;
+  }
+  .problemTitle {
+    font-size: 71px;
+    line-height: 56px;
+  }
+  .problemTitleContainer {
+    padding-top: 160px;
+  }
+
+  .stat {
+    width: 310px;
+    margin-bottom: 90px;
+  }
+  .statImage {
+    width: 260px;
+    height: 260px;
+  }
+  .statsRow {
+    justify-content: center;
+  }
+  .takesATollContainer {
+    margin-top: 50px;
+  }
+  .tollTitle {
+    font-size: 60px;
+    line-height: 6px;
+    width: 433px;
+  }
+  .tollLine {
+    width: 110px;
+  }
+  .effect {
+    width: 151px;
+  }
+  .paragraph {
+    line-height: 20px;
+    font-size: 14px;
+  }
+  .summaryTitle {
+    font-size: 57px;
+  }
+  .meditationIpadImage {
+    height: 395px;
+  }
+  .meditationIpadImageContainer {
+    height: 210px;
+  }
+  .beltTitle {
+    line-height: 60px;
+    width: 310px;
+    font-size: 70px;
+  }
+  .beltImage {
+    height: 280px;
+  }
+  .demoVideo {
+    height: 350px;
+  }
+  .technologyTitle {
+    font-size: 60px;
+  }
+  .technologyContainer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .rightp5 {
+    height: 220px;
+  }
+  .leftp5 {
+    height: 220px;
+  }
+  .electronicsImage {
+    width: 500px;
+    height: 160px;
+  }
+  .beltPara {
+    width: 240px;
+  }
+  .fabricationImage {
+    height: 220px;
+  }
+  #codingTitle {
+    padding-top: 40px;
+    margin-bottom: 20px;
+  }
+  .deviceCalibrationImage {
+    height: 168px;
+  }
+  .timerCallbackImage {
+    height: 303px;
+    width: 339px;
+    margin-right: 20px;
+  }
+  .summaryTitle {
+    padding-top: 60px;
+  }
+  .designIpadsRow {
+    padding-top: 60px;
+  }
+  .designIpads {
+    height: 320px;
+    width: 320px;
+  }
+  .birdPainting {
+    width: 290px;
+    height: 172px;
+    border: 8.86px solid #fbfcff;
+    margin-bottom: 100px;
+  }
+  .birdPaintingInner {
+    height: 222px;
+  }
+  .illustrationsImage {
+    height: 290px;
+  }
+  .paragraph {
+    line-height: 22px;
+    font-size: 16px;
+  }
+  .tryNowButtonContainer {
+    margin-top: 10px;
+  }
+  .tryNowButton {
+    height: 80px;
+    width: 216px;
+  }
+  .tryNowCircle {
+    width: 184px;
+  }
+  .demoSection {
+    margin-top: 100px;
+    margin-bottom: 0px;
+  }
+  .electronicsImage {
+    height: 243px;
+  }
+  .fabricationImage {
+    background-size: cover;
+  }
+  .tryNowButtonContainer {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  .takeawayImage {
+    height: 300px;
+  }
+  .memberImage {
+    width: 210px;
+    height: 180px;
+  }
+  .teamRow {
+    margin-top: 0px;
+  }
+  .teamMember {
+    margin-bottom: 40px;
+  }
+  .teamHeader {
+    margin-bottom: 40px;
+  }
+  .meditationTryItNow {
+    margin-top: 0px;
+    margin-bottom: 80px;
+  }
+  .downloadBtn {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+
+  .footerInfoContainer {
+    width: 180px;
+  }
+  .footerLogo {
+    margin-right: 40px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .navCrumb {
+    display: none;
+  }
+  .processButton {
+    display: none;
+  }
+  .processButtonContainer {
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .maxSectionWidth {
+    width: 500px;
+  }
+  .codingRow {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .callbackRow {
+    flex-direction: column;
+  }
+  .featuresContainer .featureItem {
+    width: 420px;
+  }
+  .featureItem {
+    font-size: 18px;
+    width: 360px;
+  }
+  .featureItem span {
+    width: 30px;
+  }
+  .processButton {
+    margin-bottom: -54px;
+    width: 270px;
+  }
+  .tryNowButtonContainer {
+    margin-left: -10px;
+  }
+  .problemIllustration {
+    display: none;
+  }
+  .problemTitle {
+    font-size: 90px;
+    line-height: 76px;
+    width: 399px;
+  }
+  .statisticsContainer {
+    margin-top: 60px;
+  }
+  .tollLine {
+    width: 40px;
+  }
+  .effect {
+    width: 210px;
+  }
+  .effectsIllustration {
+    height: 500px;
+    margin: 0 auto;
+  }
+  .takesATollContainer {
+    padding-bottom: 35px;
+  }
+  .effect {
+    margin-bottom: 15px;
+  }
+  .effectsListContainer .featureItem {
+    margin-bottom: 20px;
+  }
+  .meditationIpadImage {
+    height: 332px;
+  }
+  .meditationTryItNow {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .beltPara {
+    width: 320px;
+  }
+  .video {
+    margin-top: 20px;
+  }
+  .demoVideo {
+    height: 290px;
+  }
+  .p5InfoContainer {
+    margin-left: 20px;
+    margin-right: 0px;
+  }
+  .technologyContainer {
+    padding-bottom: 20px;
+  }
+  .electronicsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .electronicsImage {
+    height: 373px;
+    width: 373px;
+  }
+  .fabricationContainer {
+    flex-direction: column-reverse;
+    padding-bottom: 40px;
+  }
+  .fabricationImage {
+    height: 240px;
+    width: 370px;
+  }
+  .deviceCalibrationImage {
+    height: 182px;
+    margin-bottom: 10px;
+  }
+  #codingTitle {
+    text-align: center;
+  }
+  .timerCallbackImage {
+    margin-bottom: 10px;
+  }
+  .callbackRow {
+    padding-bottom: 100px;
+  }
+  .summaryTitle {
+    width: 100%;
+    text-align: center;
+  }
+  .birdPainting {
+    margin-bottom: 20px;
+  }
+  .lastIllustrationRow {
+    padding-bottom: 170px;
+  }
+  .takeawayImage {
+    height: 400px;
+    width: 100%;
+    margin-top: 35px;
+    margin-bottom: -70px;
+  }
+  .downloadBtn {
+    margin-left: -139px;
+  }
+  .teamHeader {
+    padding-top: 50px;
+  }
+  .tag {
+    transform: translateY(-60px);
+  }
+
+  .footerInfo {
+    flex-direction: column;
+  }
+  .footerInfoContainer {
+    width: 190px;
+    margin-top: 20px;
+  }
+  .footerLogo {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .maxSectionWidth {
+    width: 300px;
+  }
+  .teamRow {
+    flex-direction: column;
+    align-items: center;
+  }
+  .memberImage {
+    width: 280px;
+    height: 250px;
+  }
+  .heroTitle {
+    letter-spacing: -2px;
+
+    font-size: 50px;
+    line-height: 50px;
+    width: 261px;
+    margin-bottom: 130px;
+  }
+  .heroImage {
+    background-position: inherit;
+  }
+  .summaryTitle {
+    font-size: 50px;
+    padding-top: 40px;
+  }
+  .summaryPara {
+    width: 260px;
+  }
+  .paragraph {
+    line-height: 24px;
+    font-size: 18px;
+  }
+
+  .summaryIpadPhoto {
+    margin-top: 10px;
+    width: 316px;
+    height: 342px;
+  }
+  .summaryIphonePhoto {
+    margin-top: 180px;
+    width: 290px;
+    height: 458px;
+    margin: 0 auto;
+    margin-top: 180px;
+  }
+  .featuresContainer .featureItem {
+    width: 250px;
+  }
+  .featureItem span {
+    width: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .processButton {
+    margin-top: 50px;
+  }
+  .problemTitle {
+    font-size: 70px;
+    line-height: 56px;
+    width: 290px;
+  }
+  .tollLine {
+    display: none;
+  }
+
+  .effect {
+    margin-bottom: 35px;
+  }
+  .summaryTitle {
+    font-size: 57px;
+  }
+  .meditationIpadImage {
+    height: 232px;
+  }
+  .beltTitle {
+    line-height: 50px;
+    width: 250px;
+    font-size: 60px;
+  }
+  .beltPara {
+    width: 250px;
+  }
+  .demoVideo {
+    height: 200px;
+  }
+  .beltContainer {
+    padding-bottom: 110px;
+  }
+  .technologyTitle {
+    font-size: 39px;
+    line-height: 5px;
+    width: 297px;
+  }
+  .electronicsImage {
+    height: 250px;
+    width: 250px;
+  }
+  .fabricationImage {
+    height: 160px;
+    width: 250px;
+  }
+  .featureItem {
+    width: 260px;
+  }
+  .deviceCalibrationImage {
+    height: 132px;
+    width: 275px;
+  }
+  .timerCallbackImage {
+    height: 250px;
+    width: 275px;
+    margin-top: 20px;
+    margin-right: 0px;
+  }
+  #designTitle {
+    font-size: 45px;
+    width: 290px;
+  }
+  .designIpadsRow {
+    padding-top: 30px;
+  }
+  .illustrationsImage {
+    height: 190px;
+  }
+  .tollTitle {
+    width: 210px;
+  }
+  .takeawayImage {
+    height: 270px;
+    margin-top: 75px;
+    margin-bottom: -70px;
+  }
+  .downloadBtn {
+    margin-left: 0px;
+  }
+  .tollTitle {
+    font-size: 60px;
+    line-height: 46px;
+    width: 250px;
+  }
+  #summaryTitle {
+    font-size: 54px;
+  }
+  #beforeyougoTitle {
+    width: 210px;
+  }
+}
+/* width: 320px; */
