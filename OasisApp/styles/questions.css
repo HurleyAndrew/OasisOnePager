@@ -31,38 +31,21 @@
 }
 @keyframes toCurrentBreadcrumb {
   0% {
-<<<<<<< HEAD
     width: 12px;
     background-color: var(--light-gray);
   }
   100% {
     width: 40px;
     background-color: var(var(--dark-blue));
-=======
-    width: 1vw;
-    background-color: var(--light-gray);
-  }
-  100% {
-    width: 3vw;
-    background-color: var(--medium-blue);
->>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
   }
 }
 @keyframes fromPreviousBreadcrumb {
   0% {
-<<<<<<< HEAD
     width: 40px;
     background-color: var(var(--dark-blue));
   }
   100% {
     width: 12px;
-=======
-    width: 3vw;
-    background-color: var(--medium-blue);
-  }
-  100% {
-    width: 1vw;
->>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
     background-color: var(--light-gray);
   }
 }
@@ -164,30 +147,17 @@
 }
 
 .navBreadcrumb {
-<<<<<<< HEAD
   width: 12px;
   height: 12px;
 
   border-radius: 12px;
-=======
-  width: 1vw;
-  height: 1vw;
-
-  border-radius: 1vw;
->>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
   background-color: var(--light-gray);
 }
 
 .navCurrentBreadcrumb {
-<<<<<<< HEAD
   width: 40px;
 
   background-color: var(--dark-blue);
-=======
-  width: 3vw;
-
-  background-color: var(--medium-blue);
->>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
   animation: toCurrentBreadcrumb 1s ease-in-out;
 }
 
@@ -215,10 +185,7 @@
   height: 80px;
   transition: 0.246s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   background-repeat: no-repeat;
-<<<<<<< HEAD
   margin-left: 16px;
-=======
->>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
 }
 
 .leftNavArrow:hover {
@@ -337,21 +304,14 @@
   align-items: center;
 
   font-family: "Barlow", sans-serif;
-<<<<<<< HEAD
   font-size: 26px;
-=======
-  font-size: 32px;
->>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
   color: var(--dark-gray);
   text-align: center;
   font-weight: 400;
   animation: fadeIn 1s ease-in-out;
-<<<<<<< HEAD
 
   height: 90px;
   margin-top: 30px;
-=======
->>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
 }
 
 .optionTextFadeOut {
@@ -382,12 +342,8 @@
     inset -16px -16px 80px rgba(255, 255, 255, 0.2);
   filter: blur(1.5px);
   border-radius: 100px;
-<<<<<<< HEAD
   /* transition: all 85ms ease-in-out; */
   stroke: none;
-=======
-  transition: all 185ms ease-in-out;
->>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
 }
 
 .buttonInner {
@@ -396,21 +352,14 @@
 
   position: absolute;
 
-<<<<<<< HEAD
   border: 2px solid #c3cddf;
   border-radius: 40px;
   /* transition: all 85ms ease-in-out; */
-=======
-  border: 2px solid var(--medium-gray);
-  border-radius: 40px;
-  transition: all 185ms ease-in-out;
->>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
 }
 
 .buttonContainer:hover .buttonOuter {
   cursor: pointer;
   background-color: var(--white);
-<<<<<<< HEAD
   background: #f5f8fc;
   border: 5px solid #f8fbff;
   box-sizing: border-box;
@@ -434,28 +383,13 @@
 }
 .selected {
   border: 2px solid var(--medium-blue) !important;
-=======
-}
-.buttonContainer:hover .buttonInner {
-  cursor: pointer;
-  border: 4px solid var(--medium-blue);
-  box-shadow: 0 0 11px var(--medium-blue);
-}
-
-.selected {
-  border: 4px solid var(--medium-blue) !important;
->>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
   box-shadow: 0 0 11px var(--medium-blue) !important;
 }
 
 /* Max Screen Size */
 @media screen and (max-width: 1900px) {
   .optionText {
-<<<<<<< HEAD
     font-size: 26px;
-=======
-    font-size: 32px;
->>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
   }
 }
 
@@ -482,11 +416,7 @@
   }
   .optionText {
     margin-bottom: 0;
-<<<<<<< HEAD
     font-size: 26px;
-=======
-    font-size: 30px;
->>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
   }
   .questionWrapper {
     max-width: 1500px;
@@ -507,12 +437,8 @@
     font-size: 66px;
   }
   .optionText {
-<<<<<<< HEAD
     height: 90px;
     margin-top: 30px;
-=======
-    height: 86px;
->>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
   }
 }
 @media screen and (max-width: 1350px) {
@@ -622,10 +548,7 @@
   .optionText {
     font-size: 20px;
     width: 220px;
-<<<<<<< HEAD
     margin-top: 0;
-=======
->>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
   }
 
   .buttonOuter {
@@ -638,7 +561,6 @@
     height: 30px;
   }
 }
-<<<<<<< HEAD
 @media screen and (max-width: 526px) {
   .lastQuestion {
     flex-direction: column;
@@ -650,9 +572,6 @@
     margin-right: 0px;
   }
 }
-=======
-
->>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
 .mobileQuestionRightRail {
   /* background-color: red; */
   width: 50%;
@@ -680,27 +599,16 @@
 @media screen and (max-width: 525px) {
   .textButtonContainer {
     width: 160px;
-<<<<<<< HEAD
     /* margin-top: 20px; */
   }
   .optionText {
     font-size: 16px;
-=======
-  }
-  .optionText {
-    font-size: 19px;
->>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
     width: 300px;
   }
 
   .buttonOuter {
-<<<<<<< HEAD
     width: 65px;
     height: 65px;
-=======
-    width: 50px;
-    height: 50px;
->>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
   }
 
   .buttonInner {
@@ -708,7 +616,6 @@
     height: 20px;
   }
   .optionImageContainer {
-<<<<<<< HEAD
     /* width: 100px; */
     width: 135px;
   }
@@ -716,28 +623,17 @@
   .pillShape {
     /* height: 210px; */
     height: 250px;
-=======
-    width: 100px;
-  }
-  .pillShape {
-    height: 210px;
->>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
   }
   .optionContainer {
     height: 35%;
   }
-<<<<<<< HEAD
   .optionImage {
     transform: scale(0.95);
   }
-=======
-
->>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
   .mobileVersion {
     justify-content: center;
   }
   .mobileQuestionLeftRail {
-<<<<<<< HEAD
     justify-content: normal;
     width: 48%;
   }
@@ -751,11 +647,5 @@
   }
   .lastQuestionButton {
     margin-right: 20px;
-=======
-    width: 40%;
-  }
-  .mobileQuestionRightRail {
-    width: 40%;
->>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
   }
 }

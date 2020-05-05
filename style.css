@@ -7,13 +7,9 @@
 }
 * {
   text-rendering: geometricPrecision;
-<<<<<<< HEAD
   shape-rendering: geometricPrecision;
 }
 
-=======
-}
->>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -62,11 +58,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-<<<<<<< HEAD
   z-index: 1;
-=======
-  z-index: 2;
->>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
 }
 .heroContainer {
   height: 100vh;
@@ -118,7 +110,6 @@
   position: absolute;
   /* right: -160px; */
   /* transform: translateX(-1060px); */
-<<<<<<< HEAD
   /* transform: rotate(-6deg); */
   /* border-radius: 40px; */
   margin-top: -320px;
@@ -126,15 +117,6 @@
   height: 862px;
   right: 0;
   z-index: 0;
-=======
-  transform: rotate(-6deg);
-  /* border-radius: 40px; */
-
-  margin-top: -320px;
-  width: 1056px;
-  height: 862px;
-  /* background: black; */
->>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
   background-image: url("media/ipadPhoto.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -208,20 +190,13 @@
 }
 .problemTitle {
   font-size: 140px;
-<<<<<<< HEAD
   line-height: 107px;
-=======
-  line-height: 136px;
->>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
   color: var(--dark-blue);
 }
 .problemIllustration {
   width: 50%;
   object-fit: contain;
-<<<<<<< HEAD
   margin-bottom: -10px;
-=======
->>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
 }
 
 /* Statistics Section */
@@ -278,7 +253,6 @@
   height: 500px;
   background-color: black;
 }
-<<<<<<< HEAD
 
 /* Effects Sections */
 .effectsContainer {
@@ -319,48 +293,6 @@
   font-size: 110px;
 }
 
-=======
-
-/* Effects Sections */
-.effectsContainer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-bottom: 200px;
-}
-.effectsIllustration {
-  height: 600px;
-  object-fit: contain;
-}
-.effectsListContainer {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.effect {
-  width: 340px;
-  margin-right: 30px;
-  display: inline-block;
-  vertical-align: top;
-  /* background-color: black; */
-}
-
-/* Solution Section */
-.solutionsBG {
-  background-color: var(--medium-blue);
-}
-.solutionContainer {
-  display: flex;
-  flex-direction: column;
-}
-.solutionTitle {
-  color: var(--white);
-  font-size: 110px;
-}
-
->>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
 .meditationInfo {
   display: flex;
   flex-direction: row;
@@ -384,7 +316,6 @@
   /* width: 100vw; */
   display: flex;
   flex-direction: row;
-<<<<<<< HEAD
   position: relative;
   height: 450px;
 }
@@ -398,17 +329,6 @@
   /* margin-top: -200px; */
   position: absolute;
   bottom: -88px;
-=======
-}
-.meditationIpadImage {
-  width: 100vw;
-  height: 600px;
-  /* background: black; */
-  background-image: url("media/meditationIpad.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-top: -200px;
->>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
 }
 
 /* Breathing Belt Section */
@@ -418,11 +338,7 @@
 }
 .beltContainer {
   padding-top: 200px;
-<<<<<<< HEAD
   padding-bottom: 190px;
-=======
-  padding-bottom: 400px;
->>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
 }
 .beltImage {
   position: absolute;
@@ -471,10 +387,7 @@
   position: fixed;
   bottom: 80px;
   left: -30px;
-<<<<<<< HEAD
 
-=======
->>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
   transform: rotate(-90deg);
   display: flex;
   align-items: center;
@@ -508,11 +421,7 @@
 .tag {
   width: 50px;
   height: 50px;
-<<<<<<< HEAD
   /* background-color: black; */
-=======
-  background-color: black;
->>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
   position: absolute;
 }
 
@@ -522,7 +431,6 @@
   width: 50px;
   background-image: url("media/play.png");
 }
-<<<<<<< HEAD
 
 /* Technology Section */
 .technologyBG {
@@ -775,8 +683,6 @@
   margin-top: 0;
 }
 
-=======
->>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
 /* coloring */
 .colorWhite {
   color: var(--white) !important;
@@ -794,7 +700,6 @@
   border-color: var(--white) !important;
 }
 
-<<<<<<< HEAD
 /* Footer */
 .footerIllustrationContainer {
   position: relative;
@@ -851,9 +756,6 @@
 
 .letter {
   visibility: visible;
-=======
-.letter {
->>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
   margin-right: -3px;
   display: inline-block;
   opacity: 0;
@@ -863,10 +765,7 @@
 .textAnimation {
   transform: translate(0, 0);
   opacity: 1;
-<<<<<<< HEAD
 }
 .hideText {
   visibility: hidden;
-=======
->>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
 }
