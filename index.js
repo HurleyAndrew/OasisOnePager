@@ -24,9 +24,12 @@ function myFunction(dir) {
     } else if (rotation <= 0) {
       rotation = 0;
     }
+
+    var scrolled = window.pageYOffset;
+
     if (currentCrumb == "#Summary" || "#Features") {
-      phone.style.transform = ` translateY(${-rotation * 60}px)`;
-      tablet.style.transform = ` translateY(${rotation * 40}px)`;
+      phone.style.transform = ` translateY(${-scrolled * 0.1}px)`;
+      tablet.style.transform = ` translateY(${scrolled * 0.1}px)`;
     }
 
     // phone.style.transform = `rotate(${

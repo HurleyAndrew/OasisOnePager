@@ -686,7 +686,8 @@
     width: 290px;
     height: 458px;
     margin: 0 auto;
-    margin-top: 180px;
+    /* margin-top: 180px; */
+    margin-top: 360px;
   }
   .featuresContainer .featureItem {
     width: 250px;

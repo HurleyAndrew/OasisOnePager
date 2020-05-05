@@ -125,3 +125,6 @@
     inset 4.77778px 4.77778px 11.9444px #536ebb,
     inset -19.1111px -19.1111px 95.5556px rgba(36, 58, 120, 0.2);
 }
+.downloadBtn {
+  margin-left: -145px;
+}
