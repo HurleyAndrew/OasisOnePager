@@ -63,7 +63,7 @@ body {
   height: 500px;
   display: flex;
   align-items: center;
-  position: relative;
+  /* position: relative; */
   justify-content: center;
   margin: 0 auto;
   z-index: 1;

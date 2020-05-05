@@ -172,6 +172,7 @@ function homeVisual(val) {
   background(232, 237, 243, 5);
 
   translate(width / 2, height / 2);
+  scale(0.1);
 
   let angle = 360 / 6;
 
@@ -179,7 +180,7 @@ function homeVisual(val) {
     rotate(angle);
     push();
 
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < moverArrAmt; i++) {
       moverArr[i].update();
       moverArr[i].draw();
     }
@@ -215,13 +216,14 @@ class mover {
     this.to = to;
     this.scale = scale;
     this.randSize = random(0, 5);
+    this.randomColorNumber = random(0, 10);
   }
 
   update() {
     // this.xoff = this.xoff + 0.055 / actualVal;
     // this.yoff = this.yoff + 0.055 / actualVal;
-    this.xoff = this.xoff + 0.0005;
-    this.yoff = this.yoff + 0.0005;
+    this.xoff = this.xoff + 0.0001;
+    this.yoff = this.yoff + 0.00015;
     // this.xoff = this.xoff + 0.0001;
     // this.yoff = this.yoff + 0.0001;
     this.r += this.randR;
@@ -230,31 +232,19 @@ class mover {
   draw() {
     // fill(this.colorOther);
     // fill(lerpColor(this.colorOther, this.color, actualVal / 500));
-
-    fill(lerpColor(this.from, this.to, actualVal / 500));
+    if (this.randomColorNumber < 5) {
+      fill(lerpColor(this.from, this.to, actualVal / 500));
+    } else {
+      fill(232, 237, 243);
+    }
 
     rotate(this.r);
-    // this.nx = noise(this.xoff + this.x / 2) * width * 0.5;
-    // this.ny = noise(this.yoff + this.y / 2) * height * 0.5;
-    // ellipse(this.nx, this.ny, 10, 10);
 
-    // rotate(this.xoff * 3);
-    // rotate(this.r + actualVal / 100);
-
-    // noiseDetail(2, 0.2);
-
-    // noiseDetail(110, 0.1);
-    // this.nx = noise(this.xoff + this.x) * width * 2;
-    // this.ny = noise(this.yoff + this.y) * height * 2;
-    this.nx = noise(this.xoff + this.x) * width * this.scale;
-    this.ny = noise(this.yoff + this.y) * height * this.scale;
+    this.nx = noise(this.xoff + this.x) * width * this.scale * 8;
+    this.ny = noise(this.yoff + this.y) * height * this.scale * 3;
     // fill(255);
-    ellipse(
-      this.nx,
-      this.ny,
-      actualVal / 50 + this.randSize,
-      actualVal / 50 + this.randSize
-    );
+    let newSize = map(actualVal, 0, 450, 0, 200);
+    ellipse(this.nx, this.ny, newSize, newSize);
   }
 }
 
@@ -516,6 +506,7 @@ function simulate() {
 // HOME VISUAL
 let moverArr = [];
 let moverArr2 = [];
+let moverArrAmt = 50;
 function homeSettings() {
   noStroke();
   // 1920/10
@@ -570,7 +561,7 @@ function homeSettings() {
   let from;
   let to;
 
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < moverArrAmt; i++) {
     let id = floor(random(0, 100));
     if (id % 3 == 0) {
       from = c1;

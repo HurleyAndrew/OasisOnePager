@@ -13,7 +13,7 @@ var animation = bodymovin.loadAnimation({
 
 animation.addEventListener("complete", logData);
 
-let standardWait = 2000;
+let standardWait = 0;
 let inhaleTime = 4000 + standardWait;
 let holdTime = 7000 + inhaleTime;
 let exhaleTime = 8000 + holdTime;
@@ -47,39 +47,38 @@ setTimeout(function () {
 setTimeout(function () {
   timerExhaleEnded = false;
   timerInhaleEnded = true;
-}, (inhaleTime + exhaleTime) );
+}, inhaleTime + exhaleTime);
 
 // Trigger on Second Hold Finished
 setTimeout(function () {
   timerInhaleEnded = false;
   timerHoldEnded = true;
-}, (holdTime + exhaleTime) );
+}, holdTime + exhaleTime);
 
 // Trigger on Second Exhale Finished
 setTimeout(function () {
   timerHoldEnded = false;
   timerExhaleEnded = true;
-}, (2*exhaleTime) );
+}, 2 * exhaleTime);
 
 // THIRD CYCLE ----------------------
 // Trigger on Third Inhale Finished, should rename variables to Ended not Started
 setTimeout(function () {
   timerExhaleEnded = false;
   timerInhaleEnded = true;
-}, inhaleTime + (2*exhaleTime) );
+}, inhaleTime + 2 * exhaleTime);
 
 // Trigger on Third Hold Finished
 setTimeout(function () {
   timerInhaleEnded = false;
   timerHoldEnded = true;
-}, holdTime + (2*exhaleTime) );
+}, holdTime + 2 * exhaleTime);
 
 // Trigger on Third Exhale Finished
 setTimeout(function () {
   timerHoldEnded = false;
   timerExhaleEnded = true;
-}, (3*exhaleTime) );
-
+}, 3 * exhaleTime);
 
 function logData() {
   document.getElementById("container").classList.add("timerFade");
