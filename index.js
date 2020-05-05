@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 };
+=======
+// https://tobiasahlin.com/moving-letters/#6
+
+>>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
 //letter animation
 let playedAlready = [];
 // Tablet and phone rotations
@@ -26,7 +31,11 @@ function myFunction(dir) {
     }
     if (currentCrumb == "#Summary" || "#Features") {
       phone.style.transform = ` translateY(${-rotation * 60}px)`;
+<<<<<<< HEAD
       tablet.style.transform = ` translateY(${rotation * 40}px)`;
+=======
+      tablet.style.transform = ` translate(600px,${rotation * 40}px)`;
+>>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
     }
 
     // phone.style.transform = `rotate(${
@@ -53,10 +62,13 @@ let crumbTextArr = [
   "Hardware",
   "Demo",
   "Technology",
+<<<<<<< HEAD
   "Challenges",
   "Visual Language",
   "A Takeaway",
   "The Team",
+=======
+>>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
 ];
 let crumbTargetArr = [
   "#Intro",
@@ -68,6 +80,7 @@ let crumbTargetArr = [
   "#Hardware",
   "#Demo",
   "#Technology",
+<<<<<<< HEAD
   "#Challenges",
   "#Designs",
   "#Takeaway",
@@ -86,11 +99,28 @@ let titleTargetArr = [
   "#beforeyougoTitle",
 ];
 
+=======
+];
+
+let titleTargetArr = [
+  "#introTitle",
+  "#summaryTitle",
+  "#problemTitle",
+  "#takesatollTitle",
+  "#solutionTitle",
+  "#hardwareTitle",
+  "#technologyTitle",
+];
+>>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
 let currentCrumb;
 document.addEventListener("load", wordAnimation("#introTitle"));
 function checkTarget(target, i) {
   if (isInViewport(document.querySelector(target))) {
+<<<<<<< HEAD
     // console.log(target);
+=======
+    console.log(target);
+>>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
     currentCrumb = target;
     crumb.innerHTML = crumbTextArr[i];
     let currAnimID;
@@ -122,6 +152,7 @@ function checkTarget(target, i) {
         currAnimID = "#technologyTitle";
         wordAnimation(currAnimID);
         break;
+<<<<<<< HEAD
       case "#Challenges":
         currAnimID = "#codingTitle";
         wordAnimation(currAnimID);
@@ -134,6 +165,8 @@ function checkTarget(target, i) {
         currAnimID = "#beforeyougoTitle";
         wordAnimation(currAnimID);
         break;
+=======
+>>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
       default:
       // currAnimID = "#introTitle";
     }
@@ -142,8 +175,12 @@ function checkTarget(target, i) {
       target == "#Intro" ||
       target == "#Solution" ||
       target == "#Hardware" ||
+<<<<<<< HEAD
       target == "#Demo" ||
       target == "#Technology"
+=======
+      target == "#Demo"
+>>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
     ) {
       // console.log("at first section");
 
@@ -193,7 +230,11 @@ function wordAnimation(sentenceID) {
   let newArray = [];
 
   if (playedAlready.includes(sentenceID)) {
+<<<<<<< HEAD
     // console.log(playedAlready + " bounced");
+=======
+    console.log(playedAlready + " bounced");
+>>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
     return;
   }
   playedAlready.push(sentenceID);
@@ -201,12 +242,20 @@ function wordAnimation(sentenceID) {
     if (letterArray[i] == undefined) {
     } else {
       if (letterArray[i] == " ") {
+<<<<<<< HEAD
         // console.log("found a space");
+=======
+        console.log("found a space");
+>>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
       } else {
         if (letterArray[i] == "/") {
           newArray.push("&nbsp;");
         } else if (letterArray[i] == "%") {
+<<<<<<< HEAD
           // console.log("is an ampersand");
+=======
+          console.log("is an ampersand");
+>>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
           newArray.push("&amp;");
         } else if (letterArray[i] == "^") {
           newArray.push("<br>");
@@ -237,9 +286,12 @@ function wordAnimation(sentenceID) {
 function easeInOutQuint(x) {
   return x < 0.5 ? 16 * x * x * x * x * x : 1 - Math.pow(-2 * x + 2, 5) / 2;
 }
+<<<<<<< HEAD
 
 document.addEventListener("load", function () {});
 titleTargetArr.forEach((title) => {
   document.querySelector(title).className += " hideText";
   // console.log(title);
 });
+=======
+>>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8

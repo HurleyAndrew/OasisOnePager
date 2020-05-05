@@ -8,6 +8,7 @@ a {
 .boldBarlow {
   font-weight: 600;
 }
+<<<<<<< HEAD
 .dateLine {
   display: block;
 }
@@ -32,6 +33,8 @@ a {
 
   color: #113447;
 }
+=======
+>>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
 .homeTopBG {
   background-image: url("../media/main-app.png");
   background-repeat: no-repeat;
@@ -40,7 +43,10 @@ a {
   height: 50%;
   position: absolute;
   background-size: cover;
+<<<<<<< HEAD
   background-position: bottom;
+=======
+>>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
 }
 
 .heroImageAnimation {
@@ -49,14 +55,22 @@ a {
 
   /* transform: scale(2); */
 
+<<<<<<< HEAD
   /* -webkit-mask: url("../media/spriteSheet.png");
+=======
+  -webkit-mask: url("../media/spriteSheet.png");
+>>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
   mask: url("../media/spriteSheet.png");
   -webkit-mask-size: cover;
   mask-size: cover;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
   -webkit-animation: imageWipeIn 2s steps(29) forwards;
+<<<<<<< HEAD
   animation: imageWipeIn 2s steps(29) forwards; */
+=======
+  animation: imageWipeIn 2s steps(29) forwards;
+>>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
 }
 
 @keyframes imageWipeIn {
@@ -293,7 +307,11 @@ a {
   font-weight: 400;
   font-size: 2.5vh;
   line-height: 4vh;
+<<<<<<< HEAD
   max-width: 700px;
+=======
+  max-width: 1000px;
+>>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
   /* width: 40%; */
 }
 
@@ -424,9 +442,12 @@ a {
   }
 }
 @media screen and (max-width: 1000px) {
+<<<<<<< HEAD
   .dateLine {
     display: none;
   }
+=======
+>>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
   .textParagraph {
     width: 80%;
     font-size: 18px;
@@ -457,15 +478,19 @@ a {
     font-size: 26px;
   }
 }
+<<<<<<< HEAD
 .BackHome {
   display: none;
 }
 
+=======
+>>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
 /* MOBILE VERSION */
 @media screen and (max-width: 780px) {
   /* HOME PAGE BACKGROUND */
   /* #homeBg {
   } */
+<<<<<<< HEAD
 
   .homeTopBG {
     background-image: none;
@@ -476,13 +501,22 @@ a {
     width: 100%;
     align-items: center;
   }
+=======
+  .homeTopBG {
+    background-image: none;
+  }
+
+>>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
   .containHome {
     flex-direction: column;
     padding: 0;
   }
+<<<<<<< HEAD
   .BackHome {
     display: block;
   }
+=======
+>>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
   /* TEXT CONTAINER */
   .launchTextContainer {
     height: 55%;
@@ -493,7 +527,11 @@ a {
     flex-direction: column;
     justify-content: center;
     animation: none;
+<<<<<<< HEAD
     background-color: #113447;
+=======
+    background-color: #111e47;
+>>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
     /* padding-left: 5vw; */
     width: 100%;
     padding-top: 30px;
@@ -554,12 +592,15 @@ a {
   }
 }
 @media screen and (max-width: 600px) {
+<<<<<<< HEAD
   .textHeadline {
     margin-top: 0;
   }
   .launchTextContainer {
     height: 32%;
   }
+=======
+>>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
   /* MAIN HEADER */
   .textHeadline {
     color: #e8edf4;

@@ -43,11 +43,17 @@ window.onload = () => {
     button.addEventListener("click", function () {
       for (let b of optionButtons) {
         b.querySelector(".buttonInner").classList.remove("selected");
+<<<<<<< HEAD
         button.querySelector(".buttonOuter").classList.remove("outerSelected");
       }
 
       button.querySelector(".buttonInner").classList.add("selected");
       button.querySelector(".buttonOuter").classList.add("outerSelected");
+=======
+      }
+
+      button.querySelector(".buttonInner").classList.add("selected");
+>>>>>>> e3ba44c148ea1d466302089388bf703d6ec843c8
       currentAnswer = parseInt(button.id);
     });
   }
