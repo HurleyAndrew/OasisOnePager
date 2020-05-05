@@ -157,6 +157,7 @@ body {
   .timerbackPlate {
     width: 310px;
     height: 310px;
+    transform: translateY(10vh);
   }
   .timerButtonContainer {
     width: 310px;
